@@ -1,0 +1,8 @@
+{
+  "name": "iPhone 15",
+  "description": "Latest iPhone with A16 chip",
+  "price": 999,
+  "category": "Electronics",
+  "stock": 50,
+  "image": "https://via.placeholder.com/300x200/007bff/ffffff?text=iPhone+15"
+}

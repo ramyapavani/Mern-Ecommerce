@@ -1,0 +1,57 @@
+.home-container {
+  padding: 20px 40px;
+}
+
+.main-content {
+  display: flex;       /* This puts sidebar and grid side-by-side */
+  gap: 40px;           /* Space between sidebar and products */
+  align-items: flex-start;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;    /* Keeps text and input vertically centered */
+  gap: 30px;              /* Space between "Products" and the Search Bar */
+  margin-bottom: 30px;    /* Space between this header and the products */
+}
+
+.header-section h1 {
+  margin: 10;              /* Removes default heading margins */
+}
+
+.search-input-inline {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sidebar {
+  width: 250px;        /* Fixed width for your sidebar */
+  flex-shrink: 0;      /* Prevents sidebar from squishing */
+  position: sticky;    /* Keeps search bar visible while scrolling */
+  top: 20px;
+}
+
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-grid {
+  flex-grow: 1;        /* Grid takes up the rest of the space */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Ensure images stay uniform in the new layout */
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
